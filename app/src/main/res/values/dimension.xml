@@ -4,5 +4,8 @@
     <dimen name="card_corner">18dp</dimen>
     <dimen name="card_inner_padding">10dp</dimen>
     <dimen name="card_title_height">20dp</dimen>
-    <dimen name="card_image_height">150dp</dimen>
+    <dimen name="card_image_height">200dp</dimen>
+
+    <dimen name="list_padding">16dp</dimen>
+    <dimen name="list_spacing">8dp</dimen>
 </resources>

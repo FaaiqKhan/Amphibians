@@ -5,6 +5,7 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.*
 import androidx.compose.ui.tooling.preview.Preview
@@ -39,7 +40,8 @@ fun AmphibianCard(amphibian: Amphibian, modifier: Modifier = Modifier) {
                 contentDescription = stringResource(id = R.string.amphibian_photo),
                 modifier = Modifier
                     .fillMaxWidth()
-                    .height(dimensionResource(id = R.dimen.card_image_height))
+                    .height(dimensionResource(id = R.dimen.card_image_height)),
+                contentScale = ContentScale.FillWidth
             )
             Text(
                 text = amphibian.description,

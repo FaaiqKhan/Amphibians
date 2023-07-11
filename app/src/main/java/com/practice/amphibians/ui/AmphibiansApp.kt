@@ -16,10 +16,10 @@ fun AmphibiansApp() {
     Scaffold(
         topBar = { AmphibianTopAppBar() }
     ) {
-        val homeScreenViewModel: HomeScreenViewModel = viewModel()
+        val viewModel: HomeScreenViewModel = viewModel(factory = HomeScreenViewModel.Factory)
         HomeScreen(
-            uiState = homeScreenViewModel.amphibianUiState,
-            retryAction = homeScreenViewModel::getAmphibians,
+            uiState = viewModel.amphibianUiState,
+            retryAction = viewModel::getAmphibians,
             modifier = Modifier.padding(it)
         )
     }
